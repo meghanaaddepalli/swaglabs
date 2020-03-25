@@ -9,54 +9,50 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class LoginPageM {
 	WebDriver driver;
-	public void browser() { 
-		System.setProperty("webdriver.chrome.driver",  "Drivers/chromedriver.exe");
+
+	public void browser() {
+		System.setProperty("webdriver.chrome.driver", "Drivers/chromedriver.exe");
 		driver = new ChromeDriver();
+		// To maximize the size of the webpage
 		driver.manage().window().maximize();
+		// To wait for the browser to load
 		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
-		
+
 	}
 
-	public void LoginSwag() 
-	{
+	public void LoginSwag() {
+		// To get the given url in the webpage
 		driver.get("https://www.saucedemo.com/");
 		System.out.println(driver.getTitle());
 	}
-	
-	
-	public void UserName(String username) throws IOException, InterruptedException 
-	{
+
+	public void UserName(String username) throws IOException, InterruptedException {
 		Thread.sleep(3000);
-	//	loginClick.click();
-		
-		
+		// To enter the user credentials in the username field
 		driver.findElement(By.xpath("//input[@id='user-name']")).sendKeys(username);
-		
-		
+
 	}
-	
-	public void Password(String password) throws IOException, InterruptedException 
-	{
+
+	public void Password(String password) throws IOException, InterruptedException {
 		Thread.sleep(3000);
-	//	loginClick.click();
-		
-		
-		
+		// To enter the credentials in the password field
 		driver.findElement(By.xpath("//input[@id='password']")).sendKeys(password);
-		 
+
 	}
-	
-	public void LoginBtn() throws InterruptedException
-	{
+
+	public void LoginBtn() throws InterruptedException {
+		// To click on the login button
 		driver.findElement(By.xpath("//input[@class='btn_action']")).click();
 		Thread.sleep(3000);
-//		driver.close(); // close the current tab
 	}
-	
+
 	public void Logout() throws InterruptedException {
 		Thread.sleep(3000);
+		// To click on the menu button
 		driver.findElement(By.xpath("//button[contains(text(),'Open Menu')]")).click();
+		// To click on the logout button
 		driver.findElement(By.xpath("//a[@id='logout_sidebar_link']")).click();
+		// To close the browser
 		driver.close();
 	}
 

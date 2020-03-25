@@ -13,101 +13,173 @@ formatter.feature({
   ]
 });
 formatter.scenario({
-  "line": 88,
-  "name": "Login and go to about page",
+  "line": 49,
+  "name": "Login and click CancelPage,",
   "description": "",
-  "id": "swaglabs-website;login-and-go-to-about-page",
+  "id": "swaglabs-website;login-and-click-cancelpage,",
   "type": "scenario",
   "keyword": "Scenario",
   "tags": [
     {
-      "line": 87,
-      "name": "@SwagLabs_TS8"
+      "line": 48,
+      "name": "@SwagLabs_TS5"
     }
   ]
 });
 formatter.step({
-  "line": 89,
-  "name": "the web application will launch",
+  "line": 50,
+  "name": "user  launch the web application,",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 90,
-  "name": "the user opens the Swaglabs main page",
+  "line": 51,
+  "name": "user open the Swaglab Home page,",
   "keyword": "When "
 });
 formatter.step({
-  "line": 91,
-  "name": "the user entered the uname",
+  "line": 52,
+  "name": "user enter the usrname,",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 92,
-  "name": "the user entered the pswrd",
+  "line": 53,
+  "name": "user enter password,",
   "keyword": "And "
 });
 formatter.step({
-  "line": 93,
-  "name": "clicks on the login button user will navigate to next page",
+  "line": 54,
+  "name": "click login button user will navigate the next page,",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 94,
-  "name": "the user clicks on about buttons",
-  "keyword": "Then "
+  "line": 55,
+  "name": "user clicks addToCard button,",
+  "keyword": "And "
 });
 formatter.step({
-  "line": 95,
-  "name": "the user clicks on signin button to navigate to the next page",
-  "keyword": "Then "
+  "line": 56,
+  "name": "user clicks the card button,",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 57,
+  "name": "user clicks Checkout button,",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 58,
+  "name": "user enters FirstName,",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 59,
+  "name": "user enters LastName,",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 60,
+  "name": "user enters Zip/Postal Code,",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 61,
+  "name": "user clicks the continue button,",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 62,
+  "name": "user clicks the Cancel button,",
+  "keyword": "And "
 });
 formatter.match({
-  "location": "AboutPageStep.the_web_application_will_launch()"
+  "location": "CancelPageStep.user_launch_the_web_application()"
 });
 formatter.result({
-  "duration": 7652791940,
+  "duration": 8141975968,
   "status": "passed"
 });
 formatter.match({
-  "location": "AboutPageStep.the_user_opens_the_swaglabs_main_page()"
+  "location": "CancelPageStep.the_user_open_the_Myntra_Home_page()"
 });
 formatter.result({
-  "duration": 2043847082,
+  "duration": 2338757771,
   "status": "passed"
 });
 formatter.match({
-  "location": "AboutPageStep.the_user_enters_the_uname()"
+  "location": "CancelPageStep.the_user_login_using_usrname()"
 });
 formatter.result({
-  "duration": 3543899304,
+  "duration": 1533895639,
   "status": "passed"
 });
 formatter.match({
-  "location": "AboutPageStep.the_user_enter_the_pswrd()"
+  "location": "CancelPageStep.the_user_login_using_password()"
 });
 formatter.result({
-  "duration": 3488875527,
+  "duration": 1492747192,
   "status": "passed"
 });
 formatter.match({
-  "location": "AboutPageStep.click_on_the_login_button_user_will_navigate_to_the_next_page()"
+  "location": "CancelPageStep.click_on_login_button_user_nagivate_to_the_next_page()"
 });
 formatter.result({
-  "duration": 5450949744,
+  "duration": 7089638752,
   "status": "passed"
 });
 formatter.match({
-  "location": "AboutPageStep.the_user_clicks_on_about_button()"
+  "location": "CancelPageStep.addToCard()"
 });
 formatter.result({
-  "duration": 12007463808,
+  "duration": 3399340616,
   "status": "passed"
 });
 formatter.match({
-  "location": "AboutPageStep.the_user_clicks_on_signin_button_to_navigate_to_the_next_page()"
+  "location": "CancelPageStep.CardBtn()"
 });
 formatter.result({
-  "duration": 10619298681,
+  "duration": 4220189290,
+  "status": "passed"
+});
+formatter.match({
+  "location": "CancelPageStep.CheckBtn()"
+});
+formatter.result({
+  "duration": 3812353107,
+  "status": "passed"
+});
+formatter.match({
+  "location": "CancelPageStep.firstName()"
+});
+formatter.result({
+  "duration": 3465493998,
+  "status": "passed"
+});
+formatter.match({
+  "location": "CancelPageStep.lastName()"
+});
+formatter.result({
+  "duration": 3505983785,
+  "status": "passed"
+});
+formatter.match({
+  "location": "CancelPageStep.zipCode()"
+});
+formatter.result({
+  "duration": 3336438877,
+  "status": "passed"
+});
+formatter.match({
+  "location": "CancelPageStep.continueBtn()"
+});
+formatter.result({
+  "duration": 4175007380,
+  "status": "passed"
+});
+formatter.match({
+  "location": "CancelPageStep.cancelBtn()"
+});
+formatter.result({
+  "duration": 3983916256,
   "status": "passed"
 });
 });
