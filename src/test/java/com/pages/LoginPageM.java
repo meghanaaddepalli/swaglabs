@@ -30,7 +30,7 @@ public class LoginPageM {
 		Thread.sleep(3000);
 		// To enter the user credentials in the username field
 		driver.findElement(By.xpath("//input[@id='user-name']")).sendKeys(username);
-
+ 
 	}
 
 	public void Password(String password) throws IOException, InterruptedException {
